@@ -14,6 +14,8 @@ namespace AdMobTemplate.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Android.Gms.Ads.MobileAds.Initialize(ApplicationContext, "");
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

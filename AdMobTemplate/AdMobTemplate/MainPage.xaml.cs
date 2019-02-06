@@ -14,4 +14,12 @@ namespace AdMobTemplate
             InitializeComponent();
         }
     }
+
+    public class AdMobView : ContentView
+    {
+        public AdMobView()
+        {
+
+        }
+    }
 }
