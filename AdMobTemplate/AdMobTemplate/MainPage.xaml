@@ -6,7 +6,8 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to AdMobTemplate!" HorizontalTextAlignment="Center"/>
-        <Button Text="Show Interstitial Ad" />
+        <Button Text="Load Interstitial Ad" Clicked="Button_LoadAd"/>
+        <Button Text="Show Interstitial Ad" Clicked="Button_ShowAd"/>
         <local:AdMobView WidthRequest="320" HeightRequest="50"/>
     </StackLayout>
 

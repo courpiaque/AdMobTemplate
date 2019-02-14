@@ -13,6 +13,22 @@ namespace AdMobTemplate
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            DependencyService.Get<IAdInterstitial>().LoadAd();
+        }
+
+        private void Button_LoadAd(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAdInterstitial>().LoadAd();
+        }
+
+        private void Button_ShowAd(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAdInterstitial>().ShowAd();
+        }
     }
 
     public class AdMobView : ContentView

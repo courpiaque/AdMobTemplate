@@ -15,7 +15,7 @@ namespace AdMobTemplate.Droid
             base.OnElementChanged(e);
             if (Control == null)
             {
-                var ad = new AdView(Forms.Context);
+                var ad = new AdView(Android.App.Application.Context);
                 ad.AdSize = AdSize.Banner;
                 ad.AdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
